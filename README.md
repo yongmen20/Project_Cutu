@@ -90,9 +90,9 @@ object pooling기능을 이용하여 다수의 적을 생성하며 일정 경험
 4. 결과화면  
 ![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/c5db0790-15ae-489a-bc38-22cc61169c5c)  
 
-- **오브젝트 설정**
+- **설정값**
 ---
-![CthuluMagicGirl-Idle_00](https://github.com/yongmen20/Project_Cutu/assets/148856359/09c5ff1d-8ab1-408e-8eb4-deca3272c69c)
+![CthuluMagicGirl-Idle_00](https://github.com/yongmen20/Project_Cutu/assets/148856359/09c5ff1d-8ab1-408e-8eb4-deca3272c69c)  
 **플레이어**
   
 |속성|플레이어(Tag:Player)|
@@ -104,8 +104,8 @@ object pooling기능을 이용하여 다수의 적을 생성하며 일정 경험
 |<p align="center">원거리공격력 / 증가폭|<p align="center">15 / 5%|
 |<p align="center">유도공격력 / 증가폭|<p align="center">10 / 2~5%|
 
-![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/60bca509-b98f-4517-9073-a02c97b65f83)
-**적**
+![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/60bca509-b98f-4517-9073-a02c97b65f83)  
+**일반적**
   
 |속성|적(Tag:Enemy)|
 |---|---|
@@ -113,7 +113,7 @@ object pooling기능을 이용하여 다수의 적을 생성하며 일정 경험
 |<p align="center">속도|<p align="center">0.5~0.7|
 |<p align="center">공격력|<p align="center">1|
 
-![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/1ef66e03-5c68-46d0-80fb-2df4e38c9220)
+![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/c4303e37-0dee-47d0-85ab-c74fc19d723f)  
 **보스**
 
 |속성|적(Tag:Enemy)|
@@ -122,10 +122,21 @@ object pooling기능을 이용하여 다수의 적을 생성하며 일정 경험
 |<p align="center">속도|<p align="center">1.5|
 |<p align="center">공격력|<p align="center">1|
 
+![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/13b83f18-bd08-4f3a-a4d6-d6c2e793e623)  
+**아이템박스**
+
+|속성|적(Tag:Box)|
+|---|---|
+|<p align="center">체력|<p align="center">30|  
+
+- **플레이영상**
+--- 
+https://github.com/yongmen20/Project_Cutu/assets/148856359/c8ba9532-395f-47af-bebd-0e83f7762002
+
 
   
-
-
+- **참고자료**
+--- 
 골드메탈님의 유니티 기초 뱀서라이크🧟언데드서바이버 강의를 참고하였습니다.  
 https://www.youtube.com/watch?v=MmW166cHj54&list=PLO-mt5Iu5TeZF8xMHqtT_DhAPKmjF6i3x
 
