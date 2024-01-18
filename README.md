@@ -30,6 +30,7 @@ object pooling기능을 이용하여 다수의 적을 생성하며 일정 경험
 |<p align="center">플레이어 조작|<p align="center">게임클리어|<p align="center">게임오버|
 
 ### **플레이어 조작**
+---
 1. **플레이어는 방향키/WASD 버튼을 통해 맵의 x/y축을 자유롭게 이동할 수 있습니다.**  
   1-1. 플레이어는 한정된 맵 안에서만 이동할 수 있습니다.  
   1-2. 플레이어는 맵에 배치된 장애물(나무)을 통과할 수 없지만 적은 통과할 수 있습니다.  
@@ -50,24 +51,33 @@ object pooling기능을 이용하여 다수의 적을 생성하며 일정 경험
 ㅤㅤ3-2-1. 만약 플레이어가 모든 능력을 업그레이드했다면 체력회복 아이콘만 출력한다.  
    
 4. **플레이어는 ESC키를 통해 게임을 일시정지할 수 있습니다.**  
-  4-1. 일시정지 상태에서 다시 ESC키를 입력하면 다시 게임이 실행됩니다.  
+  4-1. 일시정지 상태에서 다시 ESC키를 입력하면 다시 게임이 실행됩니다.
+
+### **게임진행**
+---
+1. **제한시간은 10분이며 1분마다 강화된 적이 출현합니다(레벨시스템).**  
+   1-1. 제한시간이 2분이 되면 일반 적들보다 빠른 보스가 출현합니다.  
    
 ### **게임클리어**
+---
 1. **플레이어는 제한시간(10분)동안 생존하면 화면내의 모든 적을 삭제하고 결과창을 출력합니다.**  
   1-1. 결과창에는 최종 점수를 출력하고 메뉴화면으로 복귀하는 버튼을 생성합니다.  
 
 ### **게임오버**
+---
 1. **플레이어가 제한시간(10분)동안 생존하지 못하면 특정 애니메이션과 함께 게임을 정지시키고 결과창을 출력합니다.**  
   1-1. 결과창에는 최종 점수를 출력하고 메뉴화면으로 복귀하는 버튼을 생성합니다.  
 
 ## 게임플레이
 - **플레이어 조작**
+---
   
 |이동|상|하|좌|우|
 |---|---|---|---|---|
 |<p align="center">키보드|<p align="center">W|<p align="center">S|<p align="center">A|<p align="center">D|  
 
 - **UI**
+---
 1. 메뉴화면  
 ![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/ae094147-ed73-4c3a-a14d-5a638ee04260)  
 
@@ -80,8 +90,39 @@ object pooling기능을 이용하여 다수의 적을 생성하며 일정 경험
 4. 결과화면  
 ![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/c5db0790-15ae-489a-bc38-22cc61169c5c)  
 
-   
-- 플레이 영상
+- **오브젝트 설정**
+---
+![CthuluMagicGirl-Idle_00](https://github.com/yongmen20/Project_Cutu/assets/148856359/09c5ff1d-8ab1-408e-8eb4-deca3272c69c)
+**플레이어**
+  
+|속성|플레이어(Tag:Player)|
+|---|---|
+|<p align="center">체력|<p align="center">70|
+|<p align="center">속도 / 증가폭|<p align="center">1.3 / 2~5%|
+|<p align="center">대시속도 / 지속시간 / 쿨타임|<p align="center">7 / 2초 / 1초|
+|<p align="center">근접공격력 / 증가폭|<p align="center">7.5 / 50%|
+|<p align="center">원거리공격력 / 증가폭|<p align="center">15 / 5%|
+|<p align="center">유도공격력 / 증가폭|<p align="center">10 / 2~5%|
+
+![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/60bca509-b98f-4517-9073-a02c97b65f83)
+**적**
+  
+|속성|적(Tag:Enemy)|
+|---|---|
+|<p align="center">체력|<p align="center">10~270|
+|<p align="center">속도|<p align="center">0.5~0.7|
+|<p align="center">공격력|<p align="center">1|
+
+![image](https://github.com/yongmen20/Project_Cutu/assets/148856359/1ef66e03-5c68-46d0-80fb-2df4e38c9220)
+**보스**
+
+|속성|적(Tag:Enemy)|
+|---|---|
+|<p align="center">체력|<p align="center">10000|
+|<p align="center">속도|<p align="center">1.5|
+|<p align="center">공격력|<p align="center">1|
+
+
   
 
 
